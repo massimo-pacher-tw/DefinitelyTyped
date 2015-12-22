@@ -291,11 +291,13 @@ declare module jasmine {
         toHaveBeenCalled(): boolean;
         toHaveBeenCalledWith(...params: any[]): boolean;
         toContain(expected: any, expectationFailOutput?: any): boolean;
+        toHaveCssClass(expected: string): boolean;
         toBeLessThan(expected: any, expectationFailOutput?: any): boolean;
         toBeGreaterThan(expected: any, expectationFailOutput?: any): boolean;
         toBeCloseTo(expected: any, precision: any, expectationFailOutput?: any): boolean;
         toContainHtml(expected: string): boolean;
         toContainText(expected: string): boolean;
+        toHaveText(expected: string): boolean;
         toThrow(expected?: any): boolean;
         toThrowError(expected?: any, message?: string): boolean;
         not: Matchers;
